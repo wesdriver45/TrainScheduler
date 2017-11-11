@@ -16,6 +16,8 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
 
 </head>
 <body>
@@ -32,7 +34,21 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">Current Train Schedule</h3>
 					</div>
-					<div class="panel-body"></div>
+					<div class="panel-body">
+						<table class="table table-hover" id="train-table">
+                <thead>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+					</div>
 				</div>
 			</div>						
 		</div>
@@ -48,11 +64,11 @@
 								<input class="form-control" id="train-name" type="text">
 							</div>
 							<div class="form-group">
-								<label for="train-stop">Destination</label>
-								<input class="form-control" id="train-stop" type="text">
+								<label for="train-dest">Destination</label>
+								<input class="form-control" id="train-dest" type="text">
 							</div>
 							<div class="form-group">
-								<label for="train-time">Fisrs Train Time (HH:mm 24hr)</label>
+								<label for="train-time">First Train Time (HH:mm 24hr)</label>
 								<input class="form-control" id="train-time" type="text">
 							</div>
 							<div class="form-group">
