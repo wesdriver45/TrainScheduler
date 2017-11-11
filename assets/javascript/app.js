@@ -85,7 +85,7 @@
 
     //next train
     var nextTrain = moment().add(minsTilTrain, "minutes");
-      nextTrain = moment(nextTrain).format("hh:mm");
+      nextTrain = moment(nextTrain).format("hh:mm a");
     console.log("NEXT TRAIN: " + nextTrain);
 
 
